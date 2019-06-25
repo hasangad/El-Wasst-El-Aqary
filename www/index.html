@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <!-- CSS -->
+  <link rel='stylesheet' id='bootstrap.min-css' href="css/bootstrap.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap.min-css-rtl' href='css/bootstrap-rtl.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style2' href="css/fa/css/font-awesome.min.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style' href='css/style.css' type='text/css' media='all' />
+
+  <!--<script src="js/jquery.min.js"></script>-->
+  <!-- <script type="text/javascript" src="cordova.js"></script>-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>-->
+  <script src="js/jquery.validate.min.js"></script>
+
+ <!-- <script src="js/notify.min.js"></script>-->
+ <link rel="stylesheet" href="js/jquery-confirm/jquery-confirm.min.css">
+ <script src="js/jquery-confirm/jquery-confirm.min.js"></script>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+  <div class="NotchBar"></div>
+  <div class="NewAlert"><div></div></div>
+  <div class="preloader">  <div id='seconds-counter'> </div>
+</div>
+  <div class="splash"></div>
+  <div data-role="page" id="main_page">
+    <!-- start page menu -->
+    <div data-role="panel" id="menu" data-position="right" data-display="push">
+    </div>
+    <!-- /panel - End page menu -->
+    <div role="main" class="ui-content main col-xs-12 no-padding">
+
+      <!--  <a class="MenuBurger"><i class="fa fa-bars"></i></a>-->
+
+      <div class="page HomePage">
+
+        <div class="MainServices">
+
+          <a class="MainServ EjazahServ">
+
+            <div class="EjazahServIcon"></div>
+
+            <span>طلب إجازة</span>
+          </a>
+
+          <a class="MainServ PermessionServ">
+
+            <div class="EznServIcon"></div>
+            <span>طلب إذن</span>
+
+          </a>
+
+        </div>
+
+        <!-- Start of user Info -->
+
+        <Div class="USerInfo">
+
+        </Div>
+        <!-- End of user Info -->
+
+      </div>
+
+      <!-- End of Home page -->
+
+      <!-- Start user vacations list -->
+      <div class="page UserVacationsList">
+
+        <div class="container">
+
+          <h2>الإجازات السابقة</h2>
+
+          <br />
+
+          <div class="panel-group" id="accordion">
+
+          </div>
+        </div>
+
+      </div>
+      <!-- End user vacations list -->
+
+      <!-- Start user Permessions list -->
+      <div class="page UserPermessionsList">
+
+        <div class="container">
+
+          <h2>الأذونات السابقة</h2>
+
+          <br />
+
+          <div class="panel-group" id="accordion2">
+
+          </div>
+        </div>
+
+      </div>
+      <!-- End user Permessions list -->
+
+      <!-- Start EmpPermessionsListDiv -->
+      <div class="page EmpPermessionsListDiv">
+
+      </div>
+
+      <!-- End EmpPermessionsListDiv -->
+
+    </div>
+
+    <div class="page EmpVacations">
+
+      <!-- Start of USerCreatVacation -->
+
+      <div class="EmpVacationsCreate USerCreateVacation">
+
+        <div class="NewTable">
+
+          <div class="UserInfoContent">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- End of USerCreateVacation -->
+
+    </div>
+
+
+
+    <div class="page EmpPermession">
+
+      <!-- Start of USerCreatVacation -->
+
+      <div class="EmpPermessionCreate">
+
+        <div class="NewTable">
+
+          <div class="UserInfoContent2">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- End of USerCreateVacation -->
+
+    </div>
+
+  </div>
+  <!-- End of POSTS / UI CONTENT -->
+  <!--<div class="posts"></div>-->
+  </div>
+
+  <!-- JavaScript -->
+  <div class="main_menu bottom_buttons">
+
+  </div>
+
+
+  <script type="text/javascript">
+    app.initialize();
+    
+    $(document)
+      .ready(function () {
+     
+  
+        $.getScript("js/func.js", function () {
+          //alert("Script loaded and executed.");
+        });
+    
+
+      });
+  </script>
+</body>
+
+</html>

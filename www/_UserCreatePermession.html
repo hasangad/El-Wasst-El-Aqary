@@ -1,0 +1,38 @@
+<img src="images/Ezn.png" width="32" height="" alt="" title="" class="EjazahTitleIcon">
+<h2 class="SecondTitle">طلب إذن</h2>
+<div class="hr"></div>
+<form onsubmit="return false" id="TestForm">
+<div class="TableTR">
+  <span class="TableTD">نوع الإذن</span>
+  <span class="TableTD">
+    <select class="form-control" id="EmpAbsentTypeId" name="EmpAbsentTypeId" required>
+        <option value="1">إذن شخصي</option>
+        <option value="2">مهمة عمل</option>
+        <option value="4">حضور نشاط</option>
+    </select>
+
+  </span>
+</div>
+
+<div class="TableTR">
+  <span class="TableTD">التاريخ</span>
+  <span class="TableTD"><input type="date" class="form-control" id="RequestDateMekadi" name="RequestDateMekadi" required /></span>
+</div>
+
+<div class="TableTR">
+  <span class="TableTD">من </span>
+  <span class="TableTD"><input type="time" class="form-control"  id="FromTime" name="FromTime" required /></span>
+</div>
+
+<div class="TableTR">
+  <span class="TableTD">إلى</span>
+  <span class="TableTD"><input type="time" class="form-control" id="ToTime" name="ToTime"  required /></span>
+</div>
+
+<div class="TableTR">
+  <span class="TableTD">السبب</span>
+  <span class="TableTD"><textarea class="form-control" id="Reason" name="Reason" required ></textarea></span>
+</div>
+
+<input type="submit" class="btn btn-success col-lg-4 col-lg-offset-4" value="إرسال" onclick="PostPermession()"   />
+</form>

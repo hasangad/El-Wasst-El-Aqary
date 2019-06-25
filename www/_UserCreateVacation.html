@@ -1,0 +1,70 @@
+<img src="images/Ejazah.png" width="32" height="" alt="" title="" class="EjazahTitleIcon">
+<h2 class="SecondTitle">طلب إجازة</h2>
+
+<div class="hr"></div>
+<form onsubmit="return false">
+
+  <div class="TableTR">
+    <span class="TableTD">النوع</span>
+    <span class="TableTD">
+      <select class="form-control" id="NewVacVacationTypeID" name="NewVacVacationTypeID">
+        <option value="1">إجازة سنوية </option>
+        <option value="4">إجازة بدون راتب</option>
+        <option value="5">اجازة مرضية</option>
+        <option value="7">اجازة دراسة</option>
+        <option value="14">اجازة بدل عمل اضافي - أجازة أعياد</option>
+        <option value="15">أجازة حج</option>
+        <option value="16">أجازة مولود</option>
+        <option value="17">أجازة وفاة</option>
+        <option value="18">أجازة زواج</option>
+        <option value="19">اجازة امومة</option>
+        <option value="21">انتداب داخلي</option>
+        <option value="22">إجازة حج </option>
+        <option value="23">اجازة مرضية بدون تقرير</option>
+        <option value="24">دراسة</option>
+        <option value="25">انتداب خارجي</option>
+      </select>
+
+    </span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">الرصيد</span>
+    <span class="TableTD"><input type="text" disabled readonly class="form-control" id="NewVacAllowedDuration"
+        name="NewVacAllowedDuration" /></span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">من ( بداية يوم )</span>
+    <span class="TableTD"><input type="date" class="form-control" id="NewVacStartDate_M"
+        name="NewVacStartDate_M" /></span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">إلى ( نهاية يوم )</span>
+    <span class="TableTD"><input type="date" class="form-control" id="NewVacEndDate_M" name="NewVacEndDate_M" /></span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">يوم كامل/نصف يوم</span>
+    <span>
+      <select class="form-control" id="NewVacDayTypeId" name="NewVacDayTypeId">
+        <option value="1">يوم كامل </option>
+        <option value="2">نصف يوم صباحي</option>
+        <option value="3">نصف يوم مسائي</option>
+      </select>
+    </span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">المدة</span>
+    <span class="TableTD"><input type="number" class="form-control" id="NewVacPeriod" name="NewVacPeriod" disabled
+        readonly /></span>
+  </div>
+
+  <div class="TableTR">
+    <span class="TableTD">ملاحظات</span>
+    <span class="TableTD"><textarea class="form-control" id="NewVacNote" name="NewVacNote"></textarea></span>
+  </div>
+
+  <input type="submit" class="btn btn-success col-lg-4 col-lg-offset-4" value="إرسال" onclick="PostVacation()" />
