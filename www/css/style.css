@@ -511,9 +511,9 @@ form { overflow: hidden; display: block; }
 .form-control:focus {
   color: #ffffff; }
 
-.SearchBarBottom { display: table; overflow: hidden; margin: 0 auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
+.SearchBarBottom { display: table; height: 40px; overflow: hidden; margin: 0 auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
 .SearchBarBottom input { background: none; border: none; padding: 0 }
-.SearchBarBottom button { position: absolute;
+.SearchBarBottom a { position: absolute; text-align: center;
   top: 0px;
   left: 0px;
   color: #ffffff;
@@ -522,7 +522,9 @@ form { overflow: hidden; display: block; }
   width: 100%;
   padding: 8px;}
 
-  .SearchBarBottom button:active { background: #e52f27; }
+  .SearchBarBottom a i { color:#ffffff ; }
+
+  .SearchBarBottom a:active { background: #e52f27; }
 
 .SearchBarTop { display: table; margin:  0 auto 12px auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
 .SearchBarTop input { background: none; border: none; }
