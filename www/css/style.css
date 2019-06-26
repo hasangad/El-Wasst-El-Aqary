@@ -477,9 +477,9 @@ div[class^='NewAlert-'],
   display: inline-block;
   zoom: 0.9;
   overflow: hidden;
-  width: 19%;
+  width: 24%;
   text-align: center;
-  padding: 16px 0px;
+  padding: 8px 0px;
   /*border-left: 1px solid #ffffff;*/
 }
 
@@ -504,9 +504,40 @@ div[class^='NewAlert-'],
 
 }
 
+form { overflow: hidden; display: block; }
+
+.form-control { font-size: 12px; color: #ffffff ; }
+
+.form-control:focus {
+  color: #ffffff; }
+
 .SearchBarBottom { display: table; margin: 0 auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
-.SearchBarBottom input { background: none; border: none; }
-.SearchBarBottom button { position: absolute ; top:8px; left: 10px; color:#ffffff; background: none; border:none}
+.SearchBarBottom input { background: none; border: none; padding: 0 }
+.SearchBarBottom button { position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 8px;}
+
+  .SearchBarBottom button:active { background: #e52f27; }
+
+.SearchBarTop { display: table; margin:  0 auto 12px auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
+.SearchBarTop input { background: none; border: none; }
+.SearchBarTop button { position: absolute ; top:8px; left: 10px; color:#ffffff; background: none; border:none;}
+
+.SearchDetailed { display: table; margin:  0 auto 12px auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
+.SearchDetailed input { background: #503636;
+  border: none;
+  box-shadow: inset #2f2626 1px 1px 1px 0px;
+  padding: 6px;
+  height: auto;
+  min-height: auto;
+  margin: 6px 0; } 
+
+  .SearchDetailed button { margin-bottom: 8px; margin-top: 8px; font-size: 12px; }
 form a,
 .login_form a,
 .check_ticket_by_number a {
@@ -519,17 +550,25 @@ form a,
   text-decoration: underline;
 }
 
-.MainThumb { display: block; width: 94%; margin: 0px 3% 15px 3%; border-radius: 15px; box-shadow: #c5c0ad 0px 4px 5px 0px; 
+.MainThumb { display: block; background: #ffffff; width: 94%; margin: 0px 3% 15px 3%; border-radius: 15px; box-shadow: #c5c0ad 0px 4px 5px 0px; 
 overflow: hidden; border: 1px solid #ffffff;}
 
 .MainThumb img { display: block; width: 100%; }
+.MainThumbblock { box-shadow:#989898 inset 0px 0px 20px 0px; }
+.MainThumbblock b {     color: #810d0d;
+  padding: 4px;
+  margin-top: 8px;
+  position: relative;
+  display: block; }
+.MainThumbblock p { color: #555555 ; font-family: 'tahoma'; font-weight: 400; padding:4px; }
+.MainThumbblock span { color:#555555; font-weight: 400; font-size: 12px; margin-bottom: 10px;  }
 
 .login_form input {
   text-transform: lowercase;
 }
 
-.main_menu a.active {}
-
+.main_menu a.active { border-bottom: 10px solid #c32e2e}
+.main_menu a.active i { color: #c32e2e }
 .t_id {
   margin: 45px 0;
 }
@@ -805,19 +844,24 @@ body,
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #d7c291;
+  color: #ffffff !important;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #d7c291;
+  color: #ffffff !important;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #d7c291;
+  color: #ffffff !important;
+}
+
+.form-control:focus {
+  background-color:#c32e2e;
+
 }
 
 .logo {

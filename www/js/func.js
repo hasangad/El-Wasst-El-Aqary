@@ -1092,20 +1092,26 @@ $('.main_menu a').css({"width":"24%"});
 		});
 
 	$(document).on('click', '.bottom_buttons a', function () {
+		$('.bottom_buttons a').removeClass('active');
 		$(".bottom_buttons a").css({
 			"border-bottom": "none"
 		});
 		$(this).css({
-			"border-bottom": "15px solid #099e7b"
+			"border-bottom": "15px solid #c32e2e"
 		});
 
+		$(this).addClass('active');
+
 	});
-	$(document).on('click', '.UserVacationsLink', function () {
+	$(document).on('click', '.MainSearch', function () {
+
+		//alert('test ');
+
 		$(".page").animate({
 			"top": "100%"
 		});
 		$(".page").hide();
-		$(".UserVacationsList").show().animate({
+		$(".SearchPage").show().animate({
 			"top": "0%"
 		});
 		//	$(".UserVacationsList").animate({ "top": "0%"});
