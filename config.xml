@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.SHCEMPSERV" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>My SHC</name>
-  <description>
-تطبيق خدمات منسوبي المجلس الصحي السعودي   </description>
-  <author email="hasan.gadallah@gmail.com" href="http://mobile.shc.gov.sa/">
-    SHC IT team
+<widget id="com.ELWASSEETAQARY" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>الوسيط العقاري بالمنوفية</name>
+  <description></description>
+  <author email="hasan.gadallah@gmail.com" href="http://elwaseetmnf.com">
+   Gadency Team
   </author>
-  <preference name="BackgroundColor" value="#089e7a"/>
+  <preference name="BackgroundColor" value="#9f2224"/>
   <preference name="fullscreen" value="true"/>
 
   <preference name="phonegap-version" value="cli-8.0.0" />
