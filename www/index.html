@@ -9,29 +9,28 @@
   <link rel='stylesheet' id='bootstrap.min-css-rtl' href='css/bootstrap-rtl.min.css' type='text/css' media='all' />
   <link rel='stylesheet' id='css-style2' href="css/fa/css/font-awesome.min.css" type='text/css' media='all' />
   <link rel='stylesheet' id='css-style' href='css/style.css' type='text/css' media='all' />
-
   <!--<script src="js/jquery.min.js"></script>-->
   <!-- <script type="text/javascript" src="cordova.js"></script>-->
   <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js
+  "></script>
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>-->
   <script src="js/jquery.validate.min.js"></script>
-
- <!-- <script src="js/notify.min.js"></script>-->
- <link rel="stylesheet" href="js/jquery-confirm/jquery-confirm.min.css">
- <script src="js/jquery-confirm/jquery-confirm.min.js"></script>
-
-
+  <!-- <script src="js/notify.min.js"></script>-->
+  <link rel="stylesheet" href="js/jquery-confirm/jquery-confirm.min.css">
+  <script src="js/jquery-confirm/jquery-confirm.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
-
 </head>
-
 <body>
   <div class="NotchBar"></div>
-  <div class="NewAlert"><div></div></div>
-  <div class="preloader">  <div id='seconds-counter'> </div>
-</div>
+  <div class="NewAlert">
+    <div></div>
+  </div>
+  <div class="preloader">
+    <div id='seconds-counter'> </div>
+  </div>
   <div class="splash"></div>
   <div data-role="page" id="main_page">
     <!-- start page menu -->
@@ -39,97 +38,77 @@
     </div>
     <!-- /panel - End page menu -->
     <div role="main" class="ui-content main col-xs-12 no-padding">
-
       <!--  <a class="MenuBurger"><i class="fa fa-bars"></i></a>-->
-
-      <div class="page HomePage">
-
-        <a href="#" class="MainThumb"><img src="images/thumbs/main-1.jpg" width="" title="" /></a>
-        <a href="#" class="MainThumb"><img src="images/thumbs/main-2.jpg" width="" title="" /></a>
-        <a href="#" class="MainThumb"><img src="images/thumbs/main-3.jpg" width="" title="" /></a>
-    
-<div class="SearchBarBottom"><a class="MainSearch"><i class="fa fa-search"></i></a></div>
-
+      <div class="page HomePage  MainThumbHolder">
+        <div id="Items" class="Items">
+          <a href="#" class="MainThumb MainThumbblock"><img src="images/thumbs/main-3.jpg" width="" title="" />
+            <b>اسم العقار هنا</b>
+            <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
+              النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً </p>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em>155 متر</em></span>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em> الثامن علوي</em></span>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em>3 غرف</em></span>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em>2 حمام</em></span>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em>سوبر لوكس</em></span>
+            <span class="col-xs-4"><i class="fa fa-th"></i> <em>1 أسانسير</em></span>
+          </a>
+        </div>
+        <center><a id="MoreItems" class="btn btn-sm btn-primary">عرض المزيد من الاعلانات</a></center>
+        <div class="SearchBarBottom"><a class="MainSearch"><i class="fa fa-search"></i></a></div>
       </div>
-
-
-      
       <div class="page SearchPage">
-
-    
-    
-<form class="SearchBarTop">
-  <input type="search" class="form-control" value="" placeholder="بحث بواسطة ( السعر / المساحة / الموقع / الدور / النوع )" />
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-<form class="SearchDetailed">
-
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="النوع ( ايجار / تمليك )" /></fieldset>
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="حالة العقار" /></fieldset>
-
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="نوع العقار ( شقة / فيلا .. )" /></fieldset>
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="اختر المنطقة" /></fieldset>
-
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="السعر من" /></fieldset>
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="الى" /></fieldset>
-
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="المساحه من" /></fieldset>
-    <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="الى" /></fieldset>
-<div class="col-xs-12">
-  <button type="submit" class="btn btn-warning col-xs-12">بحث الآن</button>
-</div>
-
-</form>
+        <form class="SearchBarTop">
+          <input type="search" class="form-control" value=""
+            placeholder="بحث بواسطة ( السعر / المساحة / الموقع / الدور / النوع )" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <form class="SearchDetailed">
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value=""
+              placeholder="النوع ( ايجار / تمليك )" /></fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="حالة العقار" />
+          </fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value=""
+              placeholder="نوع العقار ( شقة / فيلا .. )" /></fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="اختر المنطقة" />
+          </fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="السعر من" />
+          </fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="الى" /></fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="المساحه من" />
+          </fieldset>
+          <fieldset class="col-xs-6"><input type="text" class="form-control" value="" placeholder="الى" /></fieldset>
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-warning col-xs-12">بحث الآن</button>
+          </div>
+        </form>
         <a href="#" class="MainThumb MainThumbblock"><img src="images/thumbs/main-3.jpg" width="" title="" />
-        
           <b>اسم العقار هنا</b>
-          <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً </p>
+          <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+            أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً </p>
           <span class="col-xs-4"><i class="fa fa-th"></i> <em>155 متر</em></span>
           <span class="col-xs-4"><i class="fa fa-th"></i> <em> الثامن علوي</em></span>
           <span class="col-xs-4"><i class="fa fa-th"></i> <em>3 غرف</em></span>
-
           <span class="col-xs-4"><i class="fa fa-th"></i> <em>2 حمام</em></span>
           <span class="col-xs-4"><i class="fa fa-th"></i> <em>سوبر لوكس</em></span>
           <span class="col-xs-4"><i class="fa fa-th"></i> <em>1 أسانسير</em></span>
         </a>
-
       </div>
-
       <!-- End of Home page -->
-
-
-
     </div>
-
-
-
-   
-
   </div>
   <!-- End of POSTS / UI CONTENT -->
   <!--<div class="posts"></div>-->
   </div>
-
   <!-- JavaScript -->
   <div class="main_menu bottom_buttons">
-
   </div>
-
-
   <script type="text/javascript">
     app.initialize();
-    
     $(document)
       .ready(function () {
-     
-  
-        $.getScript("js/func.js", function () {
-          //alert("Script loaded and executed.");
-        });
-    
-
+        $.getScript("js/func.js", function () {});
+        $.getScript("js/func_elwaseet.js", function () {});
       });
   </script>
 </body>
-
 </html>
