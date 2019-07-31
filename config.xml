@@ -29,7 +29,7 @@
 <preference name="StatusBarOverlaysWebView" value="true" />
 <preference name="StatusBarBackgroundColor" value="#000000" /> 
 <preference name="StatusBarStyle" value="styleBlackOpaque" />-->
- <platform name="ios">
+ <!--<platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
@@ -46,7 +46,7 @@
         <icon height="29" platform="ios" src="www/res/icon/ios/icon-small.png" width="29" />
         <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
-    </platform>
+    </platform>-->
   <plugin name="cordova-plugin-whitelist"/>
   <platform name="android">
   <icon src="www/app-ico.jpg" />
