@@ -2,13 +2,13 @@
 <widget id="com.ELWASSEETAQARY" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>الوسيط العقارية بشبين الكوم</name>
   <description>عقارك عندنا</description>
-  <author email="hasan.gadallah@gmail.com" href="http://elwaseetmnf.com">
+  <author email="hasan.gadallah@gmail.com" href="http://wwww.elwaseetmnf.com">
    Gadency Team
   </author>
   <preference name="BackgroundColor" value="#9f2224"/>
   <preference name="fullscreen" value="true"/>
-  <preference name="phonegap-version" value="cli-9.0.0" />
- <preference name="pgb-builder-version" value="2"/>
+  <!--<preference name="phonegap-version" value="cli-9.0.0" />
+ <preference name="pgb-builder-version" value="2"/>-->
 <!--<engine name="ios" spec="4.5.5" />-->
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
