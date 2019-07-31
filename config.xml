@@ -13,14 +13,14 @@
 <!--<engine name="ios" spec="4.5.5" />-->
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
-  <preference name="DisallowOverscroll" value="true"/>
+  <!--<preference name="DisallowOverscroll" value="true"/>
   <preference name="target-device" value="universal"/>
   <preference name="webviewbounce" value="true"/>
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="false"/>
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
-  <preference name="disable-cursor" value="false"/>
+  <preference name="disable-cursor" value="false"/>-->
 <preference name="android-installLocation" value="auto"/>
   <plugin name="cordova-plugin-device"/>
   <plugin name="cordova-plugin-network-information"/>
