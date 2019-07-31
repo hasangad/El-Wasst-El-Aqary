@@ -59,7 +59,7 @@ function GetItems($page, $Limit) {
                 elevator = "لا يوجد  ";
             }
             //   alert(item);
-            $(".MainThumbHolder .Items").append('<a class="MainThumb MainThumbblock Page' + Page + '"><img src="http://elwaseetmnf.net/admin/layoute/img/upload/' + item[1] + '" width="" title="' + item[2] + '" /><b>' + item[2] + '</b><p>' + item[4] + '</p><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item[6] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item[7] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountRoom'] + ' غرف</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountBathroom'] + ' حمام</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['Finished'] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + elevator + ' أسانسير</em></span></a>');
+            $(".MainThumbHolder .Items").append('<a item-id="'+item[0]+'" class="MainThumb MainThumbblock Page' + Page + '"><img src="http://elwaseetmnf.net/admin/layoute/img/upload/' + item[1] + '" width="" title="' + item[2] + '" /><b>' + item[2] + '</b><p>' + item[4] + '</p><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item[6] + '</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item[7] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountRoom'] + ' غرف</em></span><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item['CountBathroom'] + ' حمام</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item['Finished'] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + elevator + ' أسانسير</em></span></a>');
             if (Page == 10) {
                 Page = 0;
             } else {
@@ -93,13 +93,52 @@ $(document).ready(function() {
         
             });*/
 
-             /*   $(document).on('click', '.MainThumb', function () {
+                $(document).on('click', '.MainThumb', function () {
                // $(this).addClass('ItemActive');
-               $(this).prepend('<span class="CloseMe"></span>');
-                $(this).animate({"position":"fixed","top":"0","left":"0","width":"100%","z-index":"9999999999","margin":"6vh 0 0 0","border-radius":"0","height":"90vh"});
+              // $(this).prepend('<span class="CloseMe"></span>');
+              //  $(this).animate({"position":"fixed","top":"0","left":"0","width":"100%","z-index":"9999999999","margin":"6vh 0 0 0","border-radius":"0","height":"90vh"});
+ $itemid = $( this).attr( "item-id" );
+ HTML = $(this).html();
+
+$('.ItemDetails > div.MainThumb').html(HTML);
+var url = "http://www.elwaseetmnf.net/api/GeneralAPI.php?GetItem=" + $itemid;
+    $.getJSON(url, function (tick) {
+        console.log[tick];
+        $.each(tick, function (i, item) {
+            if (item['Elevator'] == 1) {
+                elevator = "يوجد ";
+            } else {
+                elevator = "لا يوجد  ";
+            }
+            //   alert(item);
+            $(".ItemDetails > div").append('<span class="col-xs-6"><i class="fa fa-th"></i> حالة العقار : '+item['status']+'</span><span class="col-xs-6"><i class="fa fa-th"></i> مفروش : '+item['Brush']+'</span><span class="col-xs-12"><i class="fa fa-th"></i> السعر : '+item['Price']+'</span><span class="col-xs-12"><i class="fa fa-th"></i> تفاصيل  : '+item['Description']+'</span>');
+            if (Page == 10) {
+                Page = 0;
+            } else {
+                Page++;
+            }
+            PageCount++;
+        });
+    });
+
+$(".page").animate({
+    "left": "100%"
+});
+//$(".page").hide();
+$(".ItemDetails").show().animate({
+    "left": "0%"
+});
+
                     });
 
                     $(document).on('click', '.CloseMe', function () {
-                    $(".MainThumb").removeAttr("style"); });
-               */
-});
+                  // alert('iClick');
+                  $(".page").animate({
+                    "left": "0%"
+                });
+                //$(".page").hide();
+                $(".ItemDetails").show().animate({
+                    "left": "-100%"
+                });
+                });
+            });
