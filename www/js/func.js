@@ -512,12 +512,12 @@ $(document).ready(function () {
 		});
 		//	$(".UserVacationsList").animate({ "top": "0%"});
 	});
-	$(document).on('click', '.UserPermessionsLink', function () {
+	$(document).on('click', '.About', function () {
 		$(".page").animate({
 			"top": "100%"
 		});
 		$(".page").hide();
-		$(".UserPermessionsList").show().animate({
+		$(".aboutpage").show().animate({
 			"top": "0%"
 		});
 		//	$(".UserVacationsList").animate({ "top": "0%"});
