@@ -8,8 +8,8 @@
   <preference name="BackgroundColor" value="#9f2224"/>
   <preference name="fullscreen" value="true"/>
   <preference name="phonegap-version" value="cli-8.0.0" />
- <!--<preference name="pgb-builder-version" value="2"/>-->
- <preference name="android-targetSdkVersion" value="28" />
+<preference name="pgb-builder-version" value="2"/>
+ <preference name="android-targetSdkVersion" value="22" />
 <!--<engine name="ios" spec="4.5.5" />-->
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
