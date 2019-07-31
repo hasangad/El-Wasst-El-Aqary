@@ -451,17 +451,17 @@ div[class^='NewAlert-'],
 
 .CloseMe {
   position: relative;
-  /* bottom: 5%; */
+  /* margin-bottom: 5%; */
   /* left: 40%; */
   background: crimson;
-  border-radius: 100%;
+  border-radius: 15px;
   z-index: 9;
   padding: 5px 10px;
   color: #fff;
   font-weight: 700;
-  /* width: 20%; */
-  right: 45%;
-
+  /* width: 50%; */
+  right: 40%;
+  /* left: 25%; */
 }
 
 .main_menu {
@@ -582,6 +582,10 @@ form a,
     overflow-y: scroll;
 }
 
+#text { margin-bottom: 10px; }
+
+.ItemDetails span { width: 50%; } .ItemDetails .col-xs-12 { width: 100%; }
+.ItemDetails span , .ItemDetails p ,  , .ItemDetails p span  { font-size: 0.9em !important; }
 .MainThumb  { display: block; background: #ffffff; height: 24.5vh; width: 94%; margin: 0px 3% 15px 3%; border-radius: 15px; box-shadow: #c5c0ad 0px 4px 5px 0px; 
 overflow: hidden; border: 1px solid #ffffff;}
 .MainThumb:active { background: yellow; }

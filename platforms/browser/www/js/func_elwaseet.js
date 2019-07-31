@@ -93,6 +93,8 @@ function ClickMe() {
 
 };
 
+// http://www.elwaseetmnf.net/api/GeneralAPI.php?Search=true&ContractType=&UnitStatus=&Rooms=&WC=3&Finish=&Elevator=
+//http://www.elwaseetmnf.net/api/GeneralAPI.php?Search=true&ContractType=%D8%AA%D9%85%D9%84%D9%8A%D9%83&UnitStatus=&Rooms=2&WC=2&Finish=%D8%AA%D8%B4%D8%B7%D9%8A%D8%A8%20%D9%84%D9%88%D9%83%D8%B3&Elevator=1
 $(document).ready(function() {
    /* $('.MainThumb').click(function(){
         alert('clicked ');
