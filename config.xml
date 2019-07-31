@@ -8,7 +8,7 @@
   <preference name="BackgroundColor" value="#9f2224"/>
   <preference name="fullscreen" value="true"/>
   <preference name="phonegap-version" value="cli-9.0.0" />
- <preference name="pgb-builder-version" value="1"/>
+ <preference name="pgb-builder-version" value="2"/>
 <!--<engine name="ios" spec="4.5.5" />-->
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
@@ -20,7 +20,7 @@
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
   <preference name="disable-cursor" value="false"/>
-  <preference name="android-installLocation" value="auto"/>
+  <!--<preference name="android-installLocation" value="auto"/>-->
   <plugin name="cordova-plugin-device"/>
   <plugin name="cordova-plugin-network-information"/>
   <plugin name="cordova-plugin-statusbar"/>
