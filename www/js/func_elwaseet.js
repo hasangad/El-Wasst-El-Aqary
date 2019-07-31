@@ -59,7 +59,7 @@ function GetItems($page, $Limit) {
                 elevator = "لا يوجد  ";
             }
             //   alert(item);
-            $(".MainThumbHolder .Items").append('<a item-id="'+item[0]+'" class="MainThumb MainThumbblock Page' + Page + '"><img src="http://elwaseetmnf.net/admin/layoute/img/upload/' + item[1] + '" width="" title="' + item[2] + '" /><b>' + item[2] + '</b><p>' + item[4] + '</p><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item[6] + '</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item[7] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountRoom'] + ' غرف</em></span><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item['CountBathroom'] + ' حمام</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item['Finished'] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + elevator + ' أسانسير</em></span></a>');
+            $(".MainThumbHolder .Items").append('<a item-id="'+item[0]+'" class="MainThumb MainThumbblock Page' + Page + '" onclick="ClickMe()"><img src="http://elwaseetmnf.net/admin/layoute/img/upload/' + item[1] + '" width="" title="' + item[2] + '" /><b>' + item[2] + '</b><p>' + item[4] + '</p><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item[6] + '</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item[7] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountRoom'] + ' غرف</em></span><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item['CountBathroom'] + ' حمام</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item['Finished'] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + elevator + ' أسانسير</em></span></a>');
             if (Page == 10) {
                 Page = 0;
             } else {
@@ -86,12 +86,23 @@ setTimeout(function () {
     }
 }, 2000)
 
+
+
+function ClickMe() {
+
+    alert('Test');
+
+}
+
 $(document).ready(function() {
    /* $('.MainThumb').click(function(){
         alert('clicked ');
         $(this).addClass('ItemActive');
         
             });*/
+
+
+
 
                 $(document).on('click', '.MainThumb', function () {
                // $(this).addClass('ItemActive');
