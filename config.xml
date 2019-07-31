@@ -13,6 +13,8 @@
 <!--<engine name="ios" spec="4.5.5" />-->
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
+    <preference name="prerendered-icon" value="true"/>
+
   <!--<preference name="DisallowOverscroll" value="true"/>
   <preference name="target-device" value="universal"/>
   <preference name="webviewbounce" value="true"/>
@@ -28,7 +30,8 @@
   <plugin name="cordova-plugin-vibration"/>
   <plugin name="cordova-plugin-whitelist"/>
   <platform name="android">
-  <icon src="www/app-ico.jpg" />
+  <icon src="www/icon.png" />
+    <icon gap:platform="android" src="www/icon.png"/>
     <preference name="SplashScreenDelay" value="0"/>
     <preference name="FadeSplashScreenDuration" value="0"/>
     <splash src="www/res/screen/ios/Default@2x~universal~anyany.png"/>
