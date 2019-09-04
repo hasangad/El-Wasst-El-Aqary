@@ -49,8 +49,8 @@ $(".MainThumbHolder .Items").html("");
 $(".preloader").fadeIn();
 function GetItems($page, $Limit, $URL) {
     $('#MoreItems').hide();
-   // var url = "http://www.elwaseetmnf.net/api/GeneralAPI.php?offset=" + $page + "&limit=" + $Limit;
-    $.getJSON(url, function (tick) {
+    var url = "http://www.elwaseetmnf.net/api/GeneralAPI.php?offset=" + $page + "&limit=" + $Limit +  $URL;
+   $.getJSON(url, function (tick) {
         console.log[tick];
         $.each(tick, function (i, item) {
             if (item['Elevator'] == 1) {
@@ -186,19 +186,16 @@ $(document).ready(function() {
 
                     console.log( $BaseType +' '+  $TypeApartment  +' '+  $ThirdLevel );
 
-                    $URL =   "http://www.elwaseetmnf.net/api/GeneralAPI.php?offset=" + $page + "&limit=" + $Limit + "&BaseType=" + $BaseType + "&TypeApartment=" + $TypeApartment + "&ThirdLevel=" + $ThirdLevel ;
+                    $URL =    "&BaseType=" + $BaseType + "&TypeApartment=" + $TypeApartment + "&ThirdLevel=" + $ThirdLevel ;
 
                 } else  {  console.log( $BaseType );
                 
-                    $URL =   "http://www.elwaseetmnf.net/api/GeneralAPI.php?offset=" + $page + "&limit=" + $Limit + "&BaseType=" + $BaseType  ;
+                    $URL =   "&BaseType=" + $BaseType  ;
 
                 }
 
-
-                GetItems($page, $Limit , $URL  )
+                GetItems(1, 10 , $URL );
                    
-
-
             });
 
                 $(document).on('click', '.MainThumb', function () {
