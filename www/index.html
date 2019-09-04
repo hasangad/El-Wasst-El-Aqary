@@ -41,54 +41,94 @@
       <!--  <a class="MenuBurger"><i class="fa fa-bars"></i></a>-->
       <div class="page HomePage  MainThumbHolder">
         <div id="Items" class="Items">
-          <a href="#" class="MainThumb MainThumbblock"><img src="images/thumbs/main-3.jpg" width="" title="" />
-            <b>اسم العقار هنا</b>
-            <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
-              النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً </p>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em>155 متر</em></span>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em> الثامن علوي</em></span>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em>3 غرف</em></span>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em>2 حمام</em></span>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em>سوبر لوكس</em></span>
-            <span class="col-xs-4"><i class="fa fa-th"></i> <em>1 أسانسير</em></span>
-          </a>
         </div>
         <center><a id="MoreItems" class="btn btn-sm btn-primary">عرض المزيد من الاعلانات</a></center>
         <div class="SearchBarBottom"><a class="MainSearch"><i class="fa fa-search"></i></a></div>
       </div>
+      <div class="page aboutpage">
+<div class="MainThumb MainThumbblock">
+  <h1 class="h1">الوسيط العقارية </h1>
+  <br />
+  <br />
+        الوسيط للإستثمار والتسويق العقاري , نقوم بتسويق كافة المشروعات السكنية من إبراج ( تحت الإنشاء - اتحاد ملاك ) وعمارات وشقق , وأيضا الأراضي والمحالات التجارية . 
+        <br />
+        <br />
+هدفنا هو البحث عن الفرص الجيدة وعرضها من خلال موقعنا لكي يسهل على عملائنا متابعه الفرص والعروض العقارية المتاحة . 
+<br />
+<br />
+
+والتعرف على المساحات والأسعار والأماكن وأيضا تسهيلات السداد بشكل واضح يوفرعلى عملائنا الوقت الجهد , ويساعدهم للوصول إلى ما يبحثون عنه . وأيضاً نتيح الفرصة لمن يرغب في تسويق عقار لدينا وعرضه على موقعنا مجاناُ . 
+<br />
+<br />
+
+وايضاً يمكنكم من خلال موقعنا التواصل معنا وإرسال استفساراتكم بخصوص مشروعاتنا وسنقوم بالرد عليكم خلال 24 ساعة . 
+</div>
+
+      </div>
       <div class="page SearchPage">
         <form class="SearchBarTop">
           <input type="search" class="form-control" value=""
-            placeholder="بحث بواسطة ( السعر / المساحة / الموقع / الدور / النوع )" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+            placeholder="بحث بواسطة ( السعر / المساحة / الموقع / الدور / النوع )" disabled />
         </form>
-        <form class="SearchDetailed">
-          <fieldset class="col-xs-6"><input type="text" class="form-control" value=""
-              placeholder="النوع ( ايجار / تمليك )" id="ContractType" /></fieldset>
-          <fieldset class="col-xs-6"><input type="text" id="UnitStatus" class="form-control" value="" placeholder="حالة العقار" />
-          </fieldset>
-          <fieldset class="col-xs-6"><input type="text" id="Rooms" class="form-control" value=""
-              placeholder="عدد الغرف" /></fieldset>
-          <fieldset class="col-xs-6"><input type="text" id="WC" class="form-control" value="" placeholder="عدد الحمامات" />
-          </fieldset>
-          <fieldset class="col-xs-6"><input type="text" id="Finish" class="form-control" value="" placeholder="نوع التشطيب" />
-          </fieldset>
-          <fieldset class="col-xs-6"><input type="text" id="Elevator" class="form-control" value="" placeholder="تواجد المصعد " /></fieldset>
+        <div class="SearchDetailed">
+         
+        
+          
+          
+            <fieldset class="col-xs-6">
+          <select id="Rooms">
+              <option value="">عدد الغرف</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            </fieldset>
+
+
+            <fieldset  class="col-xs-6">
+
+            <select id="WC">
+                <option value="">عدد الحمامات</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+
+              </fieldset>
+
+          <fieldset class="col-xs-6">
+
+              <select id="Finished">
+                  <option value="">التشطيب</option>
+                  <option value="سوبر لوكس">سوبر لوكس</option>
+                  <option value="تشطيب لوكس">لوكس</option>
+                  <option value="نص تشطيب">نص تشطيب</option>
+                  <option value="بدون">بدون</option>
+                </select>
+
+                </fieldset>
+
+          <fieldset class="col-xs-6">
+
+                <select id="Elevator">
+                    <option value="">المصعد</option>
+                    <option value="2">بدون مصعد</option>
+                    <option value="1">متواجد مصعد</option>
+                  </select>
+
+                  </fieldset>
+
+         
+              
+
                <div class="col-xs-12">
-            <button type="submit" class="btn btn-warning col-xs-12">بحث الآن</button>
+            <button onclick="SearchNow()" class="btn btn-warning col-xs-12">بحث الآن</button>
           </div>
-        </form>
-        <a href="#" class="MainThumb MainThumbblock"><img src="images/thumbs/main-3.jpg" width="" title="" />
-          <b>اسم العقار هنا</b>
-          <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
-            أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً </p>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em>155 متر</em></span>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em> الثامن علوي</em></span>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em>3 غرف</em></span>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em>2 حمام</em></span>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em>سوبر لوكس</em></span>
-          <span class="col-xs-4"><i class="fa fa-th"></i> <em>1 أسانسير</em></span>
-        </a>
+        </div>
+        <div class="SearchItems"></div>
       </div>
       <!-- End of Home page -->
     </div>

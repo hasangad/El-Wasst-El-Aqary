@@ -76,7 +76,7 @@ body {
   position: fixed;
   top: 100%;
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   margin-top: 6vh;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -477,11 +477,13 @@ div[class^='NewAlert-'],
   background: #efebdd;
 }
 
+.aboutpage > div { padding:3%; height: 85vh !important; }
+
 .main_menu a {
   display: inline-block;
   zoom: 0.9;
   overflow: hidden;
-  width: 24%;
+  width: 19%;
   text-align: center;
   padding: 8px 0px;
   /*border-left: 1px solid #ffffff;*/
@@ -522,9 +524,14 @@ form {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .SearchBarBottom {
   display: table;
   height: 40px;
+=======
+.SearchBarBottom {    display: table;
+  height: 10px;
+>>>>>>> 474c4c8c096b76c97156fda281a0a9fafe8ac0e1
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
@@ -572,6 +579,7 @@ form {
   position: relative;
 }
 
+<<<<<<< HEAD
 .SearchBarTop input {
   background: none;
   border: none;
@@ -599,10 +607,16 @@ form {
 .SearchDetailed input {
   background: #503636;
   border: none;
+=======
+.SearchDetailed { display: table; margin:  0 auto 12px auto; width: 94% ;  background: #964444; border-radius: 10px; border-bottom: 5px solid #6b3030; position: relative; }
+.SearchDetailed input , .SearchDetailed select { background: #503636;
+  border: none; border-radius: 4px;
+>>>>>>> 474c4c8c096b76c97156fda281a0a9fafe8ac0e1
   box-shadow: inset #2f2626 1px 1px 1px 0px;
   padding: 6px;
   height: auto;
   min-height: auto;
+<<<<<<< HEAD
   margin: 6px 0;
 }
 
@@ -611,6 +625,13 @@ form {
   margin-top: 8px;
   font-size: 12px;
 }
+=======
+  margin: 6px 0; width:100%; color:#ffffff } 
+
+  .SearchItems {display: block;
+    height: 56vh;
+    overflow-y: scroll;}
+>>>>>>> 474c4c8c096b76c97156fda281a0a9fafe8ac0e1
 
 form a,
 .login_form a,
@@ -1399,6 +1420,10 @@ iframe {
   border-left: none;
 }
 
+ .form-control:disabled, .form-control[readonly] {
+  background-color: transparent !important; 
+  opacity: 1;
+}
 @media screen and (min-width: 750px) {
   .main {
     zoom: 2;

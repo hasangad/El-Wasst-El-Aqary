@@ -51,7 +51,7 @@ function GetItems($page, $Limit) {
     $('#MoreItems').hide();
     var url = "http://www.elwaseetmnf.net/api/GeneralAPI.php?offset=" + $page + "&limit=" + $Limit;
     $.getJSON(url, function (tick) {
-        console.log[tick];
+       // console.log[tick];
         $.each(tick, function (i, item) {
             if (item['Elevator'] == 1) {
                 elevator = "يوجد ";
@@ -95,6 +95,59 @@ function ClickMe() {
 
 // http://www.elwaseetmnf.net/api/GeneralAPI.php?Search=true&ContractType=&UnitStatus=&Rooms=&WC=3&Finish=&Elevator=
 //http://www.elwaseetmnf.net/api/GeneralAPI.php?Search=true&ContractType=%D8%AA%D9%85%D9%84%D9%8A%D9%83&UnitStatus=&Rooms=2&WC=2&Finish=%D8%AA%D8%B4%D8%B7%D9%8A%D8%A8%20%D9%84%D9%88%D9%83%D8%B3&Elevator=1
+
+
+function SearchNow(){
+
+//alert('Search started');
+
+
+    $Rooms =  $('#Rooms').val();
+    $WC =  $('#WC').val();
+    $Finish =  $('#Finished').val();
+    $Elevator =  $('#Elevator').val();
+
+
+    if( $Rooms && $WC && $Finish && $Elevator) {
+
+    //alert( $Rooms + $WC + $Finish + $Elevator);
+
+var url2 = "http://www.elwaseetmnf.net/api/GeneralAPI.php?Search=true&ContractType=تمليك&UnitStatus=متوفر&Rooms="+$Rooms+"&WC="+$WC+"&Finish="+$Finish+"&Elevator="+$Elevator;
+url2 = encodeURI(url2);
+
+//alert(url2);
+
+$.getJSON(url2, function (tickMe) {
+    $(".preloader").fadeIn();
+
+    $i = 0;
+  //  alert('im in');
+ //console.log[tickMe];
+ $.each(tickMe, function (i, item) {
+
+   // alert(item[0]);
+
+     if (item['Elevator'] == 1) {
+         elevator = "يوجد ";
+     } else {
+         elevator = "لا يوجد  ";
+     }
+     //   alert(item);
+     $(".SearchItems").append('<a item-id="'+item[0]+'" class="MainThumb MainThumbblock Page' + Page + '"><img src="http://elwaseetmnf.net/admin/layoute/img/upload/' + item[1] + '" width="" title="' + item[2] + '" /><b>' + item[2] + '</b><p>' + item[4] + '</p><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item[6] + '</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item[7] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + item['CountRoom'] + ' غرف</em></span><span class="col-xs-3"><i class="fa fa-th"></i> <em>' + item['CountBathroom'] + ' حمام</em></span><span class="col-xs-5"><i class="fa fa-th"></i> <em>' + item['Finished'] + '</em></span><span class="col-xs-4"><i class="fa fa-th"></i> <em>' + elevator + ' أسانسير</em></span></a>');
+    
+     $i++;
+ });
+
+ if($i == 0) { alert("لا توجد نتائج"); }
+
+ $(".preloader").fadeOut();
+
+}); } else {  alert("برجاء اختيار جميع الحقول"); }
+
+      
+
+}
+
 $(document).ready(function() {
    /* $('.MainThumb').click(function(){
         alert('clicked ');
@@ -194,6 +247,8 @@ $(document).ready(function() {
               //  $(this).animate({"position":"fixed","top":"0","left":"0","width":"100%","z-index":"9999999999","margin":"6vh 0 0 0","border-radius":"0","height":"90vh"});
  $itemid = $( this).attr( "item-id" );
  HTML = $(this).html();
+
+//alert( $itemid);
 
 $('.ItemDetails > div.MainThumb').html(HTML);
 var url = "http://www.elwaseetmnf.net/api/GeneralAPI.php?GetItem=" + $itemid;
