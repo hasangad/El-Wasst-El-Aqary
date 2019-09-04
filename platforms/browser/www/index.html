@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <!-- CSS -->
+  <link rel='stylesheet' id='bootstrap.min-css' href="css/bootstrap.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap.min-css-rtl' href='css/bootstrap-rtl.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style2' href="css/fa/css/font-awesome.min.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style' href='css/style.css' type='text/css' media='all' />
+  <!--<script src="js/jquery.min.js"></script>-->
+  <!-- <script type="text/javascript" src="cordova.js"></script>-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js
+  "></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>-->
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- <script src="js/notify.min.js"></script>-->
+  <link rel="stylesheet" href="js/jquery-confirm/jquery-confirm.min.css">
+  <script src="js/jquery-confirm/jquery-confirm.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <div class="NotchBar"></div>
+  <div class="NewAlert">
+    <div></div>
+  </div>
+  <div class="preloader">
+    <div id='seconds-counter'> </div>
+  </div>
+  <div class="splash"></div>
+  <div data-role="page" id="main_page">
+    <!-- start page menu -->
+    <div data-role="panel" id="menu" data-position="right" data-display="push">
+    </div>
+    <!-- /panel - End page menu -->
+    <div role="main" class="ui-content main col-xs-12 no-padding">
+      <!--  <a class="MenuBurger"><i class="fa fa-bars"></i></a>-->
+      <div class="page HomePage  MainThumbHolder">
+        <div id="Items" class="Items">
+        </div>
+        <center><a id="MoreItems" class="btn btn-sm btn-primary">عرض المزيد من الاعلانات</a></center>
+        <div class="SearchBarBottom"><a class="MainSearch"><i class="fa fa-search"></i></a></div>
+      </div>
+      <div class="page aboutpage">
+<div class="MainThumb MainThumbblock">
+  <h1 class="h1">الوسيط العقارية </h1>
+  <br />
+  <br />
+        الوسيط للإستثمار والتسويق العقاري , نقوم بتسويق كافة المشروعات السكنية من إبراج ( تحت الإنشاء - اتحاد ملاك ) وعمارات وشقق , وأيضا الأراضي والمحالات التجارية . 
+        <br />
+        <br />
+هدفنا هو البحث عن الفرص الجيدة وعرضها من خلال موقعنا لكي يسهل على عملائنا متابعه الفرص والعروض العقارية المتاحة . 
+<br />
+<br />
+
+والتعرف على المساحات والأسعار والأماكن وأيضا تسهيلات السداد بشكل واضح يوفرعلى عملائنا الوقت الجهد , ويساعدهم للوصول إلى ما يبحثون عنه . وأيضاً نتيح الفرصة لمن يرغب في تسويق عقار لدينا وعرضه على موقعنا مجاناُ . 
+<br />
+<br />
+
+وايضاً يمكنكم من خلال موقعنا التواصل معنا وإرسال استفساراتكم بخصوص مشروعاتنا وسنقوم بالرد عليكم خلال 24 ساعة . 
+</div>
+
+      </div>
+      <div class="page SearchPage">
+        <form class="SearchBarTop">
+          <input type="search" class="form-control" value=""
+            placeholder="بحث بواسطة ( السعر / المساحة / الموقع / الدور / النوع )" disabled />
+        </form>
+        <div class="SearchDetailed">
+         
+        
+          
+          
+            <fieldset class="col-xs-6">
+          <select id="Rooms">
+              <option value="">عدد الغرف</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            </fieldset>
+
+
+            <fieldset  class="col-xs-6">
+
+            <select id="WC">
+                <option value="">عدد الحمامات</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+
+              </fieldset>
+
+          <fieldset class="col-xs-6">
+
+              <select id="Finished">
+                  <option value="">التشطيب</option>
+                  <option value="سوبر لوكس">سوبر لوكس</option>
+                  <option value="تشطيب لوكس">لوكس</option>
+                  <option value="نص تشطيب">نص تشطيب</option>
+                  <option value="بدون">بدون</option>
+                </select>
+
+                </fieldset>
+
+          <fieldset class="col-xs-6">
+
+                <select id="Elevator">
+                    <option value="">المصعد</option>
+                    <option value="2">بدون مصعد</option>
+                    <option value="1">متواجد مصعد</option>
+                  </select>
+
+                  </fieldset>
+
+         
+              
+
+               <div class="col-xs-12">
+            <button onclick="SearchNow()" class="btn btn-warning col-xs-12">بحث الآن</button>
+          </div>
+        </div>
+        <div class="SearchItems"></div>
+      </div>
+      <!-- End of Home page -->
+    </div>
+  </div>
+  <div class="ItemDetails">
+      <div class="MainThumb MainThumbblock"></div>
+      <span class="CloseMe">X إغلاق</span>
+
+    </div>
+  <!-- JavaScript -->
+  <div class="main_menu bottom_buttons">
+  </div>
+  <script type="text/javascript">
+    app.initialize();
+    $(document)
+      .ready(function () {
+        $.getScript("js/func.js", function () {});
+        $.getScript("js/func_elwaseet.js", function () {});
+      });
+  </script>
+</body>
+</html>
