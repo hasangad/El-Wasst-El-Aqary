@@ -102,6 +102,92 @@ $(document).ready(function() {
         
             });*/
 
+            $(document).on('click', '.Apartment', function () {
+                $('.TypeApartment').removeClass('hidden');
+                $(this).css({"background":"yellow"});
+                $('.RentApartment').css({"background":"none"});
+                $('.Land').css({"background":"none"});
+                localStorage.setItem("BaseType", 'Apartment');
+
+            });
+
+            $(document).on('click', '.Land', function () {
+                $('.TypeApartment').addClass('hidden');
+                $('.AprtmentFinish').addClass('hidden');
+                $('.RentType').addClass('hidden');
+                                $('.Apartment').css({"background":"none"});
+                $(this).css({"background":"yellow"});
+                localStorage.setItem("BaseType", 'Land');
+
+            });
+
+            $(document).on('click', '.OwndApartment', function () {
+                $('.RentType').addClass('hidden');
+                $('.RentApartment').css({"background":"none"});
+                $('.AprtmentFinish').removeClass('hidden');
+                $(this).css({"background":"yellow"});
+                localStorage.setItem("TypeApartment", 'OwndApartment');
+
+            });
+
+            $(document).on('click', '.RentApartment', function () {
+                $('.AprtmentFinish').addClass('hidden');
+                $('.OwndApartment').css({"background":"none"});
+                $('.RentType').removeClass('hidden');
+                $(this).css({"background":"yellow"});
+                localStorage.setItem("TypeApartment", 'RentApartment');
+            });
+
+            $(document).on('click', '.BussinessAprtment', function () {
+                localStorage.setItem("RentType", 'RentApartment');
+            });
+            $(document).on('click', '.furnaturedApartment', function () {
+                localStorage.setItem("RentType", 'furnaturedApartment');
+            });
+            $(document).on('click', '.NormalRentApartment', function () {
+                localStorage.setItem("RentType", 'NormalRentApartment');
+            });
+
+            $(document).on('click', '.SuperLuxApartment', function () {
+                localStorage.setItem("AprtmentFinish", 'SuperLuxApartment');
+            });
+
+            $(document).on('click', '.HalfFinishApartment', function () {
+                localStorage.setItem("AprtmentFinish", 'HalfFinishApartment');
+            });
+
+            $(document).on('click', '.NoFinishApartment', function () {
+                console.log('NoFinishApartment');
+                localStorage.setItem("AprtmentFinish", 'NoFinishApartment');
+            });
+            
+            $(document).on('click', '.BussinessAprtment,.furnaturedApartment,.NormalRentApartment,.SuperLuxApartment,.HalfFinishApartment,.NoFinishApartment', function () {
+                $('.AprtmentFinish > div span').css({"background":"none"});
+                $('.RentType  > div span').css({"background":"none"});
+                $(this).css({"background":"yellow"});
+
+            });
+
+            $(document).on('click', '.skip_to_home', function () {
+             
+                $BaseType = localStorage.getItem('BaseType');
+               
+                if($BaseType == 'Apartment') { 
+
+                    $TypeApartment  = localStorage.getItem('TypeApartment');
+
+                    if($BaseType == 'OwndApartment') { 
+
+                    $ThirdLevel  = localStorage.getItem('AprtmentFinish');
+                   
+                    } else  {  $ThirdLevel  = localStorage.getItem('RentType');  }
+
+                    console.log( $BaseType +' '+  $TypeApartment  +' '+  $ThirdLevel );
+
+                } else  {  console.log( $BaseType );}
+
+            });
+
                 $(document).on('click', '.MainThumb', function () {
                // $(this).addClass('ItemActive');
               // $(this).prepend('<span class="CloseMe"></span>');
