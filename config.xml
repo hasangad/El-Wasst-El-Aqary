@@ -5,7 +5,7 @@
   <author email="hasan.gadallah@gmail.com" href="http://wwww.elwaseetmnf.com">
    Gadency Team
   </author>
-  <preference name="BackgroundColor" value="#9f2224"/>
+  <!--<preference name="BackgroundColor" value="#9f2224"/>-->
   <preference name="fullscreen" value="true"/>
   <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="pgb-builder-version" value="2"/>

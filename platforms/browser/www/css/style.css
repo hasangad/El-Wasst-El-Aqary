@@ -1387,7 +1387,7 @@ iframe {
   border: 1px solid #777777;
 }
 
-.Typer span {
+.Typer .span {
   position: relative;
   width: 32%;
   white-space: nowrap;
